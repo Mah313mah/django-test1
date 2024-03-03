@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Mod_mess
 
-# Register your models here.
+
+admin.site.register(Mod_mess)

@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 #    path ('', name_tabe, name='ssss' ),
 #    path ('ssss/', name_tabe ),
-    path('massagee/',include('massagee.urls')),
+#    path('massagee/',include('massagee.urls')),
+    path('',include('massagee.urls')), 
 
 ]

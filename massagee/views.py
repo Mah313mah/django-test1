@@ -19,7 +19,17 @@
     
 #_______________________________________________
     
-from django.views.generic import TemplateView
+#from django.views.generic import TemplateView
 
-class MessView(TemplateView):
+#class MessView(TemplateView):
+#    template_name = 'home.html'
+#____________________________________________________
+    
+from django.views.generic import ListView
+from .models import Mod_mess
+
+
+class MessView(ListView):
+    model = Mod_mess
     template_name = 'home.html'
+    context_object_name = "Mod_mess_list"
